@@ -1,73 +1,68 @@
-/* Reset CSS */
-* {
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #2c3e50;
+    color: #ecf0f1;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #2c3e50; /* Fond sombre */
-    color: #ecf0f1; /* Texte clair pour le contraste */
-    padding: 20px;
 }
 
 header {
-    background-color: #2980b9; /* Bleu foncé pour le header */
+    background-color: #2980b9;
     color: #ecf0f1;
     padding: 20px;
     text-align: center;
-    position: relative; /* Nécessaire pour positionner l'image */
+    position: relative;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2em;
 }
 
 .logo {
-    max-width: 100px; /* Ajustez la taille selon vos besoins */
+    max-width: 100px;
     position: absolute;
-    top: 10px; /* Espace par rapport au haut du header */
-    right: 10px; /* Espace par rapport au bord droit du header */
+    top: 10px;
+    right: 10px;
 }
 
 main {
-    margin-top: 20px;
-    text-align: center;
-    background-color: #34495e; /* Fond plus clair pour le contenu */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 .report-container {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
 iframe {
+    width: 100%;
+    height: 500px; /* Ajustez cette valeur selon les besoins */
     border: none;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 768px) {
+    iframe {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    iframe {
+        height: 300px;
+    }
+}
+
 ul {
     list-style-type: none;
-    margin-top: 20px;
     padding: 0;
 }
 
 a {
-    color: #1abc9c; /* Couleur verte contrastante pour les liens */
+    color: #1abc9c;
     text-decoration: none;
     font-weight: bold;
 }
@@ -75,9 +70,75 @@ a {
 a:hover {
     text-decoration: underline;
 }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2980b9;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .logo {
-    max-width: 100px; /* Ajustez selon vos besoins */
+    max-width: 100px;
     position: absolute;
     top: 10px;
     right: 10px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.report-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+iframe {
+    width: 100%;
+    height: 500px; /* Ajustez cette valeur selon les besoins */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    iframe {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    iframe {
+        height: 300px;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
 }
